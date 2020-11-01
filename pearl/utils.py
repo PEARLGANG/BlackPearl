@@ -305,7 +305,7 @@ def errors_handler(func):
 
             text = "**USERBOT CRASH REPORT**\n\n"
 
-            link = "[Here](https://t.me/BlackPearlOT)"
+            link = "[Here](https://t.me/pearlsupport)"
             text += "If you wanna you can report it"
             text += f"- just forward this message {link}.\n"
             text += "Nothing is logged except the fact of error and date\n"
@@ -316,7 +316,7 @@ def errors_handler(func):
             ftext += "\nyou may not report this error if you've"
             ftext += "\nany confidential data here, no one will see your data\n\n"
 
-            ftext += "--------BEGIN Black Pearl USERBOT TRACEBACK LOG--------"
+            ftext += "--------BEGIN BLACK PEARL USERBOT TRACEBACK LOG--------"
             ftext += "\nDate: " + date
             ftext += "\nGroup ID: " + str(errors.chat_id)
             ftext += "\nSender ID: " + str(errors.sender_id)
