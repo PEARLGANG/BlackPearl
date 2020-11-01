@@ -73,7 +73,7 @@ async def updater(message):
     )
 
     if not changelog:
-        await message.edit("**Updating Userbot** \n**Version** : `2.0` \n**Telethon** : `1.15.0` \n**Status** : `Pulling Updates` \n**Thank You For Using FUGAKU !**")
+        await message.edit("**Updating Userbot** \n**Version** : `2.0` \n**Telethon** : `1.15.0` \n**Status** : `Pulling Updates` \n**Thank You For Using BlackPearl !**")
         await asyncio.sleep(5)
  
     message_one = NEW_BOT_UP_DATE_FOUND.format(
