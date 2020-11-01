@@ -44,18 +44,17 @@ async def _(event):
         await event.edit("U Dumb. Reply to User 🤷")
 
         
-        
 @pearl.on(pearl_on_cmd(pattern=r"thack"))
-        async def _(event):
+async def _(event):
     if event.fwd_from:
         return
     if event.reply_to_msg_id:
         reply_message = await event.get_reply_message()
         await event.client(GetFullUserRequest(reply_message.from_id))
         idd = reply_message.from_id
-        if idd == 965670914:
+        if idd == 1035034432:
             await edit_or_reply(
-                event, "This is My Master\n I can't hack my master's Account"
+                event, "This is My Master\nI can't hack my master's Account"
             )
         else:
             event = await edit_or_reply(event, "Hacking..")
@@ -79,3 +78,5 @@ async def _(event):
                 await event.edit(animation_chars[i % 11])
     else:
         await edit_or_reply(event, "No User is Defined\n Can't hack account")
+
+    
