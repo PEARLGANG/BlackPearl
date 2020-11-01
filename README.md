@@ -29,7 +29,7 @@ Best User Bot To Manage Your Telegram Account
 
 Simply clone the repository and run the main file:
 ```sh
-git clone https://github.com/DRMECHANIC/BlackPearl
+git clone https://github.com/PEARLGANG/BlackPearl
 cd BlackPearl
 virtualenv -p /usr/bin/python3 venv
 . ./venv/bin/activate
