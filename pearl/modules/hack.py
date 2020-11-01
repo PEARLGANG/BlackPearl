@@ -7,6 +7,7 @@ from telethon import events
 import asyncio
 from uniborg.util import pearl_on_cmd
 from telethon.tl.functions.users import GetFullUserRequest
+from uniborg.util import edit_or_reply
 
 
 
