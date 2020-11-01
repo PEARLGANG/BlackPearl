@@ -20,4 +20,4 @@ async def _(event):
         await asyncio.sleep(0.3)
         await event.edit("🔥🔥🔥")
         await asyncio.sleep(0.3)
-        await event.edit("EVERyBOdy iZ GangSTur UNtIL Black Pearl ArRivE 🔥🔥🔥")
+        await event.edit("EVERyBOdy iZ GangSTur UNtIL RiDeR ArRivE 🔥🔥🔥")
