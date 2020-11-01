@@ -21,8 +21,8 @@ async def _(event):
         "What",
         "What The",
         "What The F",
-        "What The F Brah",
-        "[What The F Brah](https://telegra.ph/file/c2421ad9fc88e2a6f2937.jpg)",
+        "What The F Bitch",
+        "[What The F Bitch](https://telegra.ph/file/c2421ad9fc88e2a6f2937.jpg)",
     ]
 
     for i in animation_ttl:
