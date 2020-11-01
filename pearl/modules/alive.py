@@ -37,7 +37,7 @@ def get_readable_time(seconds: int) -> str:
 uptime = get_readable_time((time.time() - Lastupdate))
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Unknown"
 PM_IMG = Config.ALIVE_IMAGE
-pm_caption = "➢ **BLACK PEARL IS:** `SAILING`\n\n"
+pm_caption = "➢ **BLACK PEARL IS:** SAILING\n\n"
 pm_caption += "➢ **SYSTEMS STATS**\n"
 pm_caption += "➢ **Telethon Version:** `1.15.0` \n"
 pm_caption += "➢ **Python:** `3.7.4` \n"
@@ -47,10 +47,10 @@ pm_caption += "➢ **Current Branch** : `master`\n"
 pm_caption += f"➢ **Version** : `1.0`\n"
 pm_caption += f"➢ **My Boss** : {DEFAULTUSER} \n"
 pm_caption += "➢ **Heroku Database** : `AWS - STILL WORKS LIKE A CHARM`\n\n"
-pm_caption += "➢ **License** : [GNU General Public License v3.0](github.com/DARKCYBERGANG/BlackPearl/blob/master/LICENSE)\n"
-pm_caption += "➢ **Copyright** : By [Github](GitHub.com/drmechanic7776)\n"
+pm_caption += "➢ **License** : [GNU General Public License v3.0](github.com/PEARLGANG/BlackPearl/blob/main/LICENSE)\n"
+pm_caption += "➢ **Copyright** : By [Github](GitHub.com/PEARLGANG)\n"
 pm_caption += "➢ **Check Stats By Doing** `.stat`. \n\n"
-pm_caption += "➢    **Deploy Black Pearl**"
+pm_caption += "➢ **Deploy Black Pearl** : [CLICK HERE TO DEPLOY BLACK PEARL](https://heroku.com/deploy?template=https://github.com/PEARLGANG/BlackPearl/tree/main) \n"
 
 
 @pearl.on(pearl_on_cmd(pattern=r"alive"))
