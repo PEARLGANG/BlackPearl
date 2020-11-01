@@ -50,7 +50,7 @@ pm_caption += "➢ **Heroku Database** : `AWS - STILL WORKS LIKE A CHARM`\n\n"
 pm_caption += "➢ **License** : [GNU General Public License v3.0](github.com/PEARLGANG/BlackPearl/blob/main/LICENSE)\n"
 pm_caption += "➢ **Copyright** : By [Github](GitHub.com/PEARLGANG)\n"
 pm_caption += "➢ **Check Stats By Doing** `.stat`. \n\n"
-pm_caption += "➢ **Deploy Black Pearl** : [CLICK HERE TO DEPLOY BLACK PEARL](https://heroku.com/deploy?template=https://github.com/PEARLGANG/BlackPearl/tree/main) \n"
+pm_caption += "➢ **[Deploy Black Pearl](https://heroku.com/deploy?template=https://github.com/PEARLGANG/BlackPearl/tree/main)** \n"
 
 
 @pearl.on(pearl_on_cmd(pattern=r"alive"))
