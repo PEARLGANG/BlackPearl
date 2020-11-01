@@ -3,7 +3,7 @@ import asyncio
 from pearl.utils import pearl_on_cmd
 
 
-@pearl.on(pearl_on_cmd("gangasta ?(.*)"))
+@pearl.on(pearl_on_cmd("gangsta ?(.*)"))
 async def _(event):
     if not event.text[0].isalpha() and event.text[0] not in ("/", "#", "@", "!"):
         await event.edit("EVERyBOdy")
@@ -14,7 +14,7 @@ async def _(event):
         await asyncio.sleep(0.5)
         await event.edit("UNtIL ")
         await asyncio.sleep(0.2)
-        await event.edit("Black Pearl")
+        await event.edit("RiDeR")
         await asyncio.sleep(0.3)
         await event.edit("ArRivE")
         await asyncio.sleep(0.3)
