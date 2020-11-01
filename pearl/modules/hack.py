@@ -42,3 +42,40 @@ async def _(event):
                 await event.edit(animation_chars[i % 11])
     else:
         await event.edit("U Dumb. Reply to User 🤷")
+
+        
+        
+@pearl.on(pearl_on_cmd(pattern=r"thack"))
+        async def _(event):
+    if event.fwd_from:
+        return
+    if event.reply_to_msg_id:
+        reply_message = await event.get_reply_message()
+        await event.client(GetFullUserRequest(reply_message.from_id))
+        idd = reply_message.from_id
+        if idd == 965670914:
+            await edit_or_reply(
+                event, "This is My Master\n I can't hack my master's Account"
+            )
+        else:
+            event = await edit_or_reply(event, "Hacking..")
+            animation_chars = [
+                "`Connecting To Hacked Private Server...`",
+                "`Target Selected.`",
+                "`Hacking... 0%\n▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ `",
+                "`Hacking... 4%\n█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ `",
+                "`Hacking... 8%\n██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ `",
+                "`Hacking... 20%\n█████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ `",
+                "`Hacking... 36%\n█████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ `",
+                "`Hacking... 52%\n█████████████▒▒▒▒▒▒▒▒▒▒▒▒ `",
+                "`Hacking... 84%\n█████████████████████▒▒▒▒ `",
+                "`Hacking... 100%\n█████████HACKED███████████ `",
+                f"`Targeted Account Hacked...\n\nPay 69$ To` {DEFAULTUSER} . `To Remove this hack..`",
+            ]
+            animation_interval = 3
+            animation_ttl = range(11)
+            for i in animation_ttl:
+                await asyncio.sleep(animation_interval)
+                await event.edit(animation_chars[i % 11])
+    else:
+        await edit_or_reply(event, "No User is Defined\n Can't hack account")
