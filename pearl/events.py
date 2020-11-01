@@ -59,11 +59,9 @@ def register(**args):
             if groups_only and not check.is_group:
                 await check.respond("`I don't think this is a group.`")
                 return
-
             try:
                 await func(check)
-
-            # Thanks to @kandnub for this HACK.
+              
             # Raise StopPropagation to Raise StopPropagation
             # This needed for AFK to working properly
 
