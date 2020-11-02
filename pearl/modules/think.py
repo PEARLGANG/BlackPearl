@@ -14,7 +14,7 @@ from pearl.utils import pearl_on_cmd
 async def _(event):
     if event.fwd_from:
         return
-    animation_interval = 0.1
+    animation_interval = 0.5
     animation_ttl = range(0, 288)
 
     # await event.edit(input_str)
