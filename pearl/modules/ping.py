@@ -33,11 +33,11 @@ def get_readable_time(seconds: int) -> str:
 @pearl.on(pearl_on_cmd(pattern="ping$"))
 @pearl.on(sudo_cmd(pattern="ping$", allow_sudo=True))
 async def _(event):
-    starkislub = await edit_or_reply(event, "`Pong !`")
+    perumechanic = await edit_or_reply(event, "`Pong !`")
     if event.fwd_from:
         return
     start = datetime.now()
     end = datetime.now()
     ms = (end - start).microseconds / 1000
     uptime = get_readable_time((time.time() - Lastupdate))
-    await starkislub.edit(f"**█▀▀█ █▀▀█ █▀▀▄ █▀▀▀ █\n█░░█ █░░█ █░░█ █░▀█ ▀\n█▀▀▀ ▀▀▀▀ ▀░░▀ ▀▀▀▀ ▄**\n ➲ `{ms}` \n ➲ `{uptime}`")
+    await perumechanic.edit(f"**█▀▀█ █▀▀█ █▀▀▄ █▀▀▀ █\n█░░█ █░░█ █░░█ █░▀█ ▀\n█▀▀▀ ▀▀▀▀ ▀░░▀ ▀▀▀▀ ▄**\n ➲ `{ms}` \n ➲ `{uptime}`")
