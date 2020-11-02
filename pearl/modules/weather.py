@@ -56,7 +56,7 @@ async def _(event):
         await event.edit(response_api["message"])
 
 
-@pearl.on(pearl_on_cmd(pattern="wttr (.*)"))
+@pearl.on(pearl_on_cmd(pattern="wtr (.*)"))
 async def _(event):
     if event.fwd_from:
         return
