@@ -1,4 +1,4 @@
-"""Check if Black Pearl alive. If you change these, you become the gayest gay such that even the gay world will disown you."""
+"""Check if Black Pearl alive. If you change these, you become the Badass NuB such that even the BoT world will disown you."""
 import time
 from uniborg.util import pearl_on_cmd, sudo_cmd
 from pearl import ALIVE_NAME
