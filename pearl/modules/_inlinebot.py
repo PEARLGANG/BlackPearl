@@ -42,9 +42,9 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                     [
                         Button.url(
                             "Repo 🇮🇳",
-                            "https://github.com/DARKCYBERGANG/BlackPearl")
+                            "https://github.com/PEARLGANG/BlackPearl")
                     ],
-                    [Button.url("Join Channel ❤️", "t.me/pearlsupport")],
+                    [Button.url("Join Channel ⚓", "t.me/pearlsupport")],
                 ],
             )
         if event.query.user_id == bot.uid and query.startswith("**Hello"):
@@ -53,16 +53,16 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                 text=query,
                 buttons=[
                     [
-                        custom.Button.inline("❌ I Am Here For Spamming ❌ ",
+                        custom.Button.inline("🚫 I Am Here For Spamming 🚫 ",
                                              data="dontspamnigga")
                     ],
                     [
                         custom.Button.inline(
-                            "🛡️ I Am Here For Talking With Your Master 🛡️",
+                            "🔰 I Am Here For Talking With Your Master 🔰",
                             data="whattalk")
                     ],
                     [
-                        custom.Button.inline("🙏 I Am Here For Asking Something 🙏",
+                        custom.Button.inline("🙂 I Am Here For Asking Something 🙂",
                                              data="askme")
                     ],
                 ],
@@ -178,7 +178,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
 
 
 def paginate_help(page_number, loaded_modules, prefix):
-    number_of_rows = 8
+    number_of_rows = 10
     number_of_cols = 2
     helpable_modules = []
     for p in loaded_modules:
