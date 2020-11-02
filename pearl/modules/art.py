@@ -1,4 +1,4 @@
-from .. import ALIVE_NAME
+from pearl import ALIVE_NAME
 from pearl.utils import pearl_on_cmd, edit_or_reply, sudo_cmd
 
 DEF = str(ALIVE_NAME) if ALIVE_NAME else "Black Pearl"
