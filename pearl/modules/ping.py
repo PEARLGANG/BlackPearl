@@ -40,4 +40,4 @@ async def _(event):
     end = datetime.now()
     ms = (end - start).microseconds
     uptime = get_readable_time((time.time() - Lastupdate))
-    await perumechanic.edit(f"**█▀▀█ █▀▀█ █▀▀▄ █▀▀▀ █\n█░░█ █░░█ █░░█ █░▀█ ▀\n█▀▀▀ ▀▀▀▀ ▀░░▀ ▀▀▀▀ ▄**\n ➲ `{ms}` \n ➲ `{uptime}`")
+    await perumechanic.edit(f"**█▀▀█ █▀▀█ █▀▀▄ █▀▀▀ █\n█░░█ █░░█ █░░█ █░▀█ ▀\n█▀▀▀ ▀▀▀▀ ▀░░▀ ▀▀▀▀ ▄**\n ➲ `{ms}` ms \n ➲ `{uptime}`")
