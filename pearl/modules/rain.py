@@ -4,7 +4,7 @@ from collections import deque
 from telethon import events
 
 
-@pearl.on(events.NewMessage(pattern=r"\.km_rain2", outgoing=True))
+@pearl.on(events.NewMessage(pattern=r"\.rain", outgoing=True))
 async def _(event):
     if event.fwd_from:
         return
