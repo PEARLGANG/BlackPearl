@@ -12,7 +12,7 @@ from pearl import CMD_LIST
 from pearl.modules import inlinestats
 PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
 if PMPERMIT_PIC is None:
-    WARN_PIC = "https://telegra.ph/file/d8d7dc283fb294008ddcb.jpg"
+    WARN_PIC = "https://telegra.ph/file/d1500fa8836c99a1a0dd8.jpg"
 else:
     WARN_PIC = PMPERMIT_PIC
 LOG_CHAT = Config.PRIVATE_GROUP_ID
