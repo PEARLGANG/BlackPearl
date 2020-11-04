@@ -76,7 +76,7 @@ HIT = [
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Black Pearl"
 
 
-@pearl.on(pearl_on_cmd(pattern="slap ?(.*)", allow_sudo=True))
+@pearl.on(pearl_on_cmd(pattern="slap ?(.*)"))
 async def who(event):
     if event.fwd_from:
         return
