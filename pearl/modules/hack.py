@@ -23,7 +23,7 @@ async def _(event):
         firstname = replied_user.user.first_name
         usname = replied_user.user.username
         useri_d = event.sender_id
-        if useri_d == 965670914:
+        if useri_d == "" :
             await event.edit("This is My Master\nI can't hack my master's Account\n**How dare you trying to hack my master's account nigger!**\n\n__Your account has been hacked! Pay 69$ to my master__ @riderprovider2op __to release your account__")
         else:
             await event.edit("Hacking..")
@@ -53,7 +53,7 @@ async def _(event):
         reply_message = await event.get_reply_message()
         await event.client(GetFullUserRequest(reply_message.from_id))
         idd = reply_message.from_id
-        if idd == 1035034432:
+        if idd == "" :
             await edit_or_reply(
                 event, "This is My Master\nI can't hack my master's Account"
             )
