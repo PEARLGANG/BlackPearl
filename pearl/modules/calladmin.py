@@ -3,7 +3,7 @@ from telethon.tl.types import ChannelParticipantsAdmins
 from uniborg.util import pearl_on_cmd
 
 
-@pearl.on(pearl_on_cmd(pattern="admins", allow_sudo=True))
+@pearl.on(pearl_on_cmd(pattern="admins"))
 async def _(event):
     if event.fwd_from:
         return
