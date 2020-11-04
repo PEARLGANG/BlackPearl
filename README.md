@@ -2,7 +2,7 @@
 ## A Bot With Assistant Support 🔥
 
 <p align="center">
-<img src="https://telegra.ph/file/d8d7dc283fb294008ddcb.jpg" alt="BLACK PEARL">
+<img src="https://telegra.ph/file/60b984931c2df825c7035.jpg" alt="BLACK PEARL">
 
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
