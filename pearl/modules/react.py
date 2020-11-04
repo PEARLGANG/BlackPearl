@@ -3,7 +3,7 @@ import random
 from telethon import events
 
 
-pearl.on(events.NewMessage(pattern=r"\.react (.*)", outgoing=True))
+@pearl.on(events.NewMessage(pattern=r"\.react (.*)", outgoing=True))
 async def _(event):
     if event.fwd_from:
         return
