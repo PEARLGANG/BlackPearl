@@ -65,7 +65,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                                              data="askme")
                     ],
                     [ 
-                        custom.button.inline("4️⃣ Others",
+                        custom.Button.inline("4️⃣ Others",
                                              data="others")
                     ]
                 ],
