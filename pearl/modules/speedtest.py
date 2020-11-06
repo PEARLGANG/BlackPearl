@@ -21,7 +21,7 @@ async def _(event):
         as_document = True
     elif input_str == "text":
         as_text = True
-    await event.edit("`Calculating my internet speed. Please wait!`")
+    await event.edit("`LETS CHECK IF MY NETWORK HAS GUTS OR NOT!`")
     start = datetime.now()
     s = speedtest.Speedtest()
     s.get_best_server()
@@ -90,7 +90,7 @@ __With the Following ERRORs__
 def convert_from_bytes(size):
     power = 2 ** 10
     n = 0
-    units = {0: "", 1: "kilobytes", 2: "megabytes", 3: "gigabytes", 4: "terabytes"}
+    units = {0: "", 1: "Kbps", 2: "Mbps", 3: "Gbps", 4: "Tbps"}
     while size > power:
         size /= power
         n += 1
