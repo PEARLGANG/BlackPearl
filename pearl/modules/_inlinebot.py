@@ -53,18 +53,21 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                 text=query,
                 buttons=[
                     [
-                        custom.Button.inline("**1. I Am Here For Spamming**",
+                        custom.Button.inline("1️⃣ Spamming",
                                              data="dontspamnigga")
                     ],
                     [
-                        custom.Button.inline(
-                            "**2. I Am Here For Talking With Your Master**",
-                            data="whattalk")
+                        custom.Button.inline("2️⃣ Chatting",
+                                             data="whattalk")
                     ],
                     [
-                        custom.Button.inline("**3. I Am Here For Asking Something**",
+                        custom.Button.inline("3️⃣ I wanna ask somethingg",
                                              data="askme")
                     ],
+                    [ 
+                        custom.button.inline("4️⃣ Others",
+                                             data="others")
+                    ]
                 ],
             )
         await event.answer([result] if result else None)
@@ -176,6 +179,12 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         text3 = "Ok, Wait. You can Ask After Master Approves You. Kindly, Wait."
         await borg.send_message(event.query.user_id, text3)
 
+    @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"others")))
+    async def rip(event):
+        chat_s = await event.get_chat()
+        await event.edit("Choice Accepted ✔️")
+        text4 = "Ok, Wait. You can Ask After Master Approves You. Kindly, Wait."
+        await borg.send_message(event.query.user_id, text4)
 
 def paginate_help(page_number, loaded_modules, prefix):
     number_of_rows = 10
