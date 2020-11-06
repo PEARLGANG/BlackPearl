@@ -53,16 +53,16 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                 text=query,
                 buttons=[
                     [
-                        custom.Button.inline("🚫 I Am Here For Spamming 🚫 ",
+                        custom.Button.inline("**1. I Am Here For Spamming**",
                                              data="dontspamnigga")
                     ],
                     [
                         custom.Button.inline(
-                            "🔰 I Am Here For Talking With Your Master 🔰",
+                            "**2. I Am Here For Talking With Your Master**",
                             data="whattalk")
                     ],
                     [
-                        custom.Button.inline("🙂 I Am Here For Asking Something 🙂",
+                        custom.Button.inline("**3. I Am Here For Asking Something**",
                                              data="askme")
                     ],
                 ],
