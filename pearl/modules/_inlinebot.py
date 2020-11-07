@@ -53,14 +53,14 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                 text=query,
                 buttons=[
                     [
-                        custom.Button.inline("1️⃣ Spamming",b"1",data="dontspamnigga")
+                        custom.Button.inline("1️⃣ Spamming",b"1",data="dontspamnigga"),
                         custom.Button.inline("2️⃣ Chatting",b"2",data="whattalk")
                     ],
                     [
-                        custom.Button.inline("3️⃣ Doubt",b"3",data="askme")
+                        custom.Button.inline("3️⃣ Doubt",b"3",data="askme"),
                         custom.Button.inline("4️⃣ Others",b"4",data="others")
-                    ],
-                ],
+                    ]
+                ]
             )
         await event.answer([result] if result else None)
 
