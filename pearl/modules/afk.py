@@ -153,7 +153,7 @@ async def on_afk(event):
         msg = None
         message_to_reply = (
             f"**Hi. I'm not here right now..but maybe i am..or maybe it's a program..or maybe I'm a program in the Matrix..omg help!!**  \n**AFKT** : `{total_afk_time}`\n**Reason** : `{reason}`"
-            + f"\n\n**BEEP BEEP..PLEASE LEAVE A MESSAGE!"
+            + f"\n\n**BEEP BEEP..PLEASE LEAVE A MESSAGE!**"
             if reason
             else f"**You Didn't Give Me A Quarter, THerefore I Dont't Give A Crap**\n AFK : `{total_afk_time}` Hold Up.. will come back if any change in plans"
         )
