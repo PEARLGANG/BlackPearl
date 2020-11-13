@@ -39,7 +39,6 @@ lxml
 lyricsgenius
 oauth2client
 pendulum
-Pillow
 psycopg2-binary
 PyLyrics
 PyPDF2
