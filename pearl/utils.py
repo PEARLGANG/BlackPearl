@@ -6,6 +6,7 @@ from pathlib import Path
 
 
 from telethon import events
+from telethon.tl.types import DocumentAttributeFilename
 
 from pearl import CMD_LIST, LOAD_PLUG, SUDO_LIST, bot
 from pearl.Configs import Config
