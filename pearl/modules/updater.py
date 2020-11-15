@@ -65,7 +65,7 @@ async def updater(message):
     )
 
     if not changelog:
-        await message.edit("`Updation in Progress......`")
+        await message.edit("`Let's check what new we got here......`")
         await asyncio.sleep(8)
 
     message_one = NEW_BOT_UP_DATE_FOUND.format(
@@ -136,7 +136,7 @@ def generate_change_log(git_repo, diff_marker):
 async def deploy_start(tgbot, message, refspec, remote):
     await message.edit(RESTARTING_APP)
     await message.edit(
-        "Updation Sucessfull ! Now Restarting To Finish This Process. Try `.alive` To Check If I Am Alive \n© @pearlsupport"
+        "Woo-Hoo!! We Got New Features, Now Restarting Black Pearl wait for 5 mins. Try `.test` To Test. \n© @pearlsupport"
     )
     await remote.push(refspec=refspec)
     await tgbot.disconnect()
