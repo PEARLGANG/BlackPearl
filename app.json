@@ -23,7 +23,7 @@
       "required": false
     },
     "ALIVE_NAME": {
-      "description": "Enter Username Here ",
+      "description": "[ALIVE NAME](t.me/username)",
       "value": ""
     },
     "APP_ID": {
