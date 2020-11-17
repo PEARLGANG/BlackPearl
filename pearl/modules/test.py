@@ -5,4 +5,4 @@ from uniborg.util import pearl_on_cmd
 async def test(event):
     if event.fwd_from:
         return
-    await event.edit("Test Successfull. Boss !")
+    await event.edit("Black Pearl Is Sailing At Full Speed!")
