@@ -38,6 +38,7 @@ uptime = get_readable_time((time.time() - Lastupdate))
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Unknown"
 PM_IMG = Config.ALIVE_IMAGE
 pm_caption = "➢ **BLACK PEARL IS:** SAILING\n\n"
+pm_caption += "✪༺ ──•◈•───•◈•──༻✪\n"
 pm_caption += "➢ **SYSTEMS STATS**\n"
 pm_caption += "➢ **Telethon Version:** `1.15.0` \n"
 pm_caption += "➢ **Python:** `3.7.4` \n"
@@ -50,6 +51,7 @@ pm_caption += "➢ **Heroku Database** : `AWS - STILL WORKS LIKE A CHARM`\n\n"
 pm_caption += "➢ **License** : [GNU General Public License v3.0](github.com/PEARLGANG/BlackPearl/blob/main/LICENSE)\n"
 pm_caption += "➢ **Copyright** : By [Github](GitHub.com/PEARLGANG)\n"
 pm_caption += "➢ **Check Stats By Doing** `.stat`. \n\n"
+pm_caption += "✪༺ ──•◈•───•◈•──༻✪\n"
 pm_caption += "➢ **[Deploy Black Pearl](https://heroku.com/deploy?template=https://github.com/PEARLGANG/BlackPearl/tree/main)** \n"
 
 
