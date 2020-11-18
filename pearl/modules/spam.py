@@ -53,7 +53,7 @@ async def repeat(rider):
         replyText += toBeRepeated + "\n"
     await rider.reply(replyText)
   except:      
-        return await rider.reply(f"**Error**\nusage `. repeatspam <count> <text>`")
+        return await rider.reply(f"**Error**\nusage `.rspam <count> <text>`")
 
 
 @pearl.on(pearl_on_cmd(pattern=f"(?:cspam|csp)\s(.*)"))
@@ -83,7 +83,7 @@ async def tmeme(rider):
   except:
     	pass
   try:
-    wspam = str(e.pattern_match.group(1))
+    wspam = str(rider.pattern_match.group(1))
     message = wspam.split()
     for word in message:
         await rider.respond(word)
@@ -122,9 +122,9 @@ async def tiny_pic_spam(rider):
        return await rider.edit("```Reply to a media message```")
     message = reply_message.media
     for i in range(1, counter):
-        await rider.client.send_file(e.chat_id, message)
+        await rider.client.send_file(rider.chat_id, message)
   except:      
-        return await rider.reply(f"**Error**\nusage `.dspam <count> reply to a media/photo/video`")
+        return await rider.reply(f"**Error**\nusage `.mspam <count> reply to a media/photo/video`")
 
 @pearl.on(pearl_on_cmd(pattern=f"(?:dmspam|dmsp)\s(.*)"))
 async def tiny_pic_spam(rider):
@@ -146,7 +146,7 @@ async def tiny_pic_spam(rider):
         await rider.client.send_file(rider.chat_id, message)
         await sleep(spamDelay)
   except:      
-        return await rider.reply(f"**Error**\nusage `.ddspam <time in seconds> <count> reply to a media/photo/video`")
+        return await rider.reply(f"**Error**\nusage `.dmspam <time in seconds> <count> reply to a media/photo/video`")
 
 @pearl.on(pearl_on_cmd(pattern=f"(?:delayspam|dsp)\s(.*)"))
 async def spammer(rider):
