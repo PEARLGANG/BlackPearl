@@ -26,13 +26,13 @@ async def scam(rider):
         except:      
              return await rider.reply("Failed \n\n •**Error:** Invalid Time.....")
     else:
-        return await rider.reply(f"**Error**\nusage `!scam <time in seconds> <action>`")
+        return await rider.reply(f"**Error**\nusage `.scam <time in seconds> <action>`")
     try:
         if (scam_time > 0):            
             async with rider.client.action(e.chat_id, scam_action):
                 await sleep(scam_time)
     except Exception as rider:      
-        return await rider.reply(f"**Error**\nusage `!scam <time in seconds> <action>`")
+        return await rider.reply(f"**Error**\nusage `.scam <time in seconds> <action>`")
 
 
 @pearl.on(pearl_on_cmd(pattern=f"(?:rspam|rsp)\s(.*)"))
@@ -53,7 +53,7 @@ async def repeat(rider):
         replyText += toBeRepeated + "\n"
     await rider.reply(replyText)
   except:      
-        return await rider.reply(f"**Error**\nusage `! repeatspam <count> <text>`")
+        return await rider.reply(f"**Error**\nusage `. repeatspam <count> <text>`")
 
 
 @pearl.on(pearl_on_cmd(pattern=f"(?:cspam|csp)\s(.*)"))
@@ -71,7 +71,7 @@ async def tmeme(rider):
     for letter in message:
         await rider.respond(letter)
   except:      
-        return await rider.reply(f"**Error**\nusage `!cspam <text>`")
+        return await rider.reply(f"**Error**\nusage `.cspam <text>`")
 
 @pearl.on(pearl_on_cmd(pattern=f"(?:wspam|wsp)\s(.*)"))
 async def tmeme(rider):
@@ -88,7 +88,7 @@ async def tmeme(rider):
     for word in message:
         await rider.respond(word)
   except:      
-        return await rider.reply(f"**Error**\nusage `!wspam  <text> <text> <text>`")
+        return await rider.reply(f"**Error**\nusage `.wspam  <text> <text> <text>`")
 
 @pearl.on(pearl_on_cmd(pattern=f"(?:spam|sp)\s(.*)"))
 async def spammer(rider):
@@ -104,7 +104,7 @@ async def spammer(rider):
     spam_message = str(rider.pattern_match.group(1).split(' ', 1)[1])
     await asyncio.wait([rider.respond(spam_message) for i in range(counter)])
   except:      
-        return await e.reply(f"**Error**\nusage `!spam <time in seconds> <text>`")
+        return await e.reply(f"**Error**\nusage `.spam <time in seconds> <text>`")
 
 @pearl.on(pearl_on_cmd(pattern=f"(?:mspam|msp)\s(.*)"))
 async def tiny_pic_spam(rider):
@@ -124,7 +124,7 @@ async def tiny_pic_spam(rider):
     for i in range(1, counter):
         await rider.client.send_file(e.chat_id, message)
   except:      
-        return await rider.reply(f"**Error**\nusage `!dspam <count> reply to a media/photo/video`")
+        return await rider.reply(f"**Error**\nusage `.dspam <count> reply to a media/photo/video`")
 
 @pearl.on(pearl_on_cmd(pattern=f"(?:dmspam|dmsp)\s(.*)"))
 async def tiny_pic_spam(rider):
@@ -146,7 +146,7 @@ async def tiny_pic_spam(rider):
         await rider.client.send_file(rider.chat_id, message)
         await sleep(spamDelay)
   except:      
-        return await rider.reply(f"**Error**\nusage `!ddspam <time in seconds> <count> reply to a media/photo/video`")
+        return await rider.reply(f"**Error**\nusage `.ddspam <time in seconds> <count> reply to a media/photo/video`")
 
 @pearl.on(pearl_on_cmd(pattern=f"(?:delayspam|dsp)\s(.*)"))
 async def spammer(rider):
@@ -165,7 +165,7 @@ async def spammer(rider):
         await rider.respond(spam_message)
         await sleep(spamDelay)
   except:      
-        return await rider.reply(f"**Error**\nusage `!dealyspam <time in seconds> <count> <text>`")
+        return await rider.reply(f"**Error**\nusage `.dealyspam <time in seconds> <count> <text>`")
 
 
 CMD_HELP.update({
