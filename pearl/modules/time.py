@@ -1,5 +1,5 @@
 """ It does not do to dwell on dreams and forget to live
-Syntax: .getime"""
+Syntax: .time"""
 
 import asyncio
 import os
@@ -52,9 +52,3 @@ async def _(event):
     await event.delete()
 
 
-@pearl.on(pearl_on_cmd("gtime (.*)"))  # pylint:disable=E0602
-async def _(event):
-    if event.fwd_from:
-        return
-    input_str = event.pattern_match.group(1)
-    logger.info(input_str)  # pylint:disable=E0602
