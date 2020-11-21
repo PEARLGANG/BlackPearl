@@ -80,12 +80,14 @@
     },
     "SPOTIFY_USERNAME": {
             "description": "Spotify Current Listening Music to Bio.",
+            "value": ""
             "required": false
-        },
+    },
         "SPOTIFY_PASS": {
             "description": "Spotify Current Listening Music to Bio.",
+            "value": ""
             "required": false
-        },
+    },
     "TG_BOT_TOKEN_BF_HER": {
       "description": "Needed for inline buttons maker. Make a bot at @BotFather and get the token of your bot. Get it.",
       "value": ""
