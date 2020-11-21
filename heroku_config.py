@@ -17,6 +17,8 @@ class Var(object):
     LESS_SPAMMY = os.environ.get("LESS_SPAMMY", None)
     HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
+    SPOTIFY_USERNAME = os.environ.get("SPOTIFY_USERNAME") or None
+    SPOTIFY_PASS = os.environ.get("SPOTIFY_PASS") or None
     TG_BOT_TOKEN_BF_HER = os.environ.get("TG_BOT_TOKEN_BF_HER", None)
     # Send .get_id in any channel to fill this value.
     PLUGIN_CHANNEL = int(os.environ.get("PLUGIN_CHANNEL", -100))
