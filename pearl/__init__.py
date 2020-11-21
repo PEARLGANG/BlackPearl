@@ -101,6 +101,10 @@ if bool(ENV):
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
     HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
 
+    # Spotify Account
+    SPOTIFY_USERNAME = os.environ.get("SPOTIFY_USERNAME") or None
+    SPOTIFY_PASS = os.environ.get("SPOTIFY_PASS") or None
+
     # Pm Permit Img
     PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
     # PRIVATE_GROUP_ID = os.environ.get("PRIVATE_GROUP_ID", None)
