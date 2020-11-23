@@ -36,7 +36,7 @@ ALL_DONE = (
 # -- Constants End -- #
 
 
-@pearl.on(pearl_on_cmd("update ?(.*)", outgoing=True))
+@pearl.on(pearl_on_cmd("..update ?(.*)", outgoing=True))
 async def updater(message):
     try:
         repo = git.Repo()
