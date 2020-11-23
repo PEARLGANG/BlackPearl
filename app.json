@@ -83,7 +83,7 @@
             "value": ""
             "required": false
     },
-        "SPOTIFY_PASS": {
+    "SPOTIFY_PASS": {
             "description": "Spotify Current Listening Music to Bio.",
             "value": ""
             "required": false
