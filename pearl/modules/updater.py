@@ -19,7 +19,7 @@ IS_SELECTED_DIFFERENT_BRANCH = (
 OFFICIAL_UPSTREAM_REPO = Config.UPSTREAM_REPO
 BOT_IS_UP_TO_DATE = "`The Black Pearl is up-to-date.\nThank you for Using this Service.`"
 NEW_BOT_UP_DATE_FOUND = (
-    "new update found for {branch_name}\n" "changelog: \n\n{changelog}\n" "updating ..."
+    "New update found for {branch_name}\n" "changelog: \n\n{changelog}\n" "updating ..."
 )
 NEW_UP_DATE_FOUND = "New update found for {branch_name}\n" "`updating ...`"
 REPO_REMOTE_NAME = "temponame"
@@ -28,6 +28,11 @@ DIFF_MARKER = "HEAD..{remote_name}/{branch_name}"
 NO_HEROKU_APP_CFGD = "no heroku application found, but a key given? 😕 "
 HEROKU_GIT_REF_SPEC = "HEAD:refs/heads/main"
 RESTARTING_APP = "re-starting heroku application"
+ALL_DONE = (
+    "Woo-Hoo!! We Got New Features, Now Restarting Black Pearl wait for 5 mins.\n\n"
+    "✪༺ ──•◈•───•◈•──༻✪\n\n"
+    "Try `.test` To Test. \n© @pearlsupport"
+)
 # -- Constants End -- #
 
 
@@ -135,9 +140,7 @@ def generate_change_log(git_repo, diff_marker):
 
 async def deploy_start(tgbot, message, refspec, remote):
     await message.edit(RESTARTING_APP)
-    await message.edit(
-        "Woo-Hoo!! We Got New Features, Now Restarting Black Pearl wait for 5 mins. Try `.test` To Test. \n© @pearlsupport"
-    )
+    await message.edit(ALL_DONE)
     await remote.push(refspec=refspec)
     await tgbot.disconnect()
     os.execl(sys.executable, sys.executable, *sys.argv)
