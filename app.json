@@ -80,12 +80,12 @@
     },
     "SPOTIFY_USERNAME": {
             "description": "Spotify Current Listening Music to Bio.",
-            "value": ""
+            "value": "",
             "required": false
     },
     "SPOTIFY_PASS": {
             "description": "Spotify Current Listening Music to Bio.",
-            "value": ""
+            "value": "",
             "required": false
     },
     "TG_BOT_TOKEN_BF_HER": {
