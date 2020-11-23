@@ -18,7 +18,7 @@ Best User Bot To Manage Your Telegram Account
 
 ### Host BlackPearl In Heroku
 
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/PEARLGANG/BlackPearl/tree/main)
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/PEARLGANG/BlackPearl/tree/master)
 
 ## Telegram-String
 
