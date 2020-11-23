@@ -86,7 +86,7 @@ async def upstream(ups):
         repo.__del__()
         return
     except InvalidGitRepositoryError as error:
-        if conf != "now":
+        if conf .= "now":
             await ups.edit(
                 f"`Unfortunately, the directory {error} does not seem to be a git repository.\
             \nBut we can fix that by force updating the userbot using .update now.`"
@@ -96,12 +96,12 @@ async def upstream(ups):
         origin = repo.create_remote('upstream', off_repo)
         origin.fetch()
         force_update = True
-        repo.create_head('main', origin.refs.main)
-        repo.heads.main.set_tracking_branch(origin.refs.main)
-        repo.heads.main.checkout(True)
+        repo.create_head('master', origin.refs.master)
+        repo.heads.master.set_tracking_branch(origin.refs.master)
+        repo.heads.master.checkout(True)
 
     ac_br = repo.active_branch.name
-    if ac_br != 'main':
+    if ac_br .= 'master':
         await ups.edit(
             f'**[UPDATER]:**` Looks like you are using your own custom branch ({ac_br}). '
             'in that case, Updater is unable to identify '
@@ -126,7 +126,7 @@ async def upstream(ups):
         repo.__del__()
         return
 
-    if conf != "now" and not force_update:
+    if conf .= "now" and not force_update:
         changelog_str = f'**New UPDATE available for {ALIVE_NAME}\n\nCHANGELOG:**\n`{changelog}`'
         if len(changelog_str) > 4096:
             await ups.edit("`Changelog is too big, view the file to see it.`")
@@ -172,7 +172,7 @@ async def upstream(ups):
             repo.__del__()
             return
         await ups.edit(f'`[Updater]\
-                        {ALIVE_NAME} •dyno build in progress, please wait for it to complete.\n•It may take 10 minutes `'
+                        {ALIVE_NAME} •dyno build in progress, please wait for it to complete.\n•It may take 5 minutes `'
                        )
         ups_rem.fetch(ac_br)
         repo.git.reset("--hard", "FETCH_HEAD")
@@ -184,7 +184,7 @@ async def upstream(ups):
         else:
             remote = repo.create_remote("heroku", heroku_git_url)
         try:
-            remote.push(refspec="HEAD:refs/heads/main", force=True)
+            remote.push(refspec="HEAD:refs/heads/master", force=True)
         except GitCommandError as error:
             await ups.edit(f'{txt}\n`Here is the error log:\n{error}`')
             repo.__del__()
