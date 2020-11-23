@@ -86,7 +86,7 @@ async def upstream(ups):
         repo.__del__()
         return
     except InvalidGitRepositoryError as error:
-        if conf .= "now":
+        if conf != "now":
             await ups.edit(
                 f"`Unfortunately, the directory {error} does not seem to be a git repository.\
             \nBut we can fix that by force updating the userbot using .update now.`"
@@ -101,7 +101,7 @@ async def upstream(ups):
         repo.heads.master.checkout(True)
 
     ac_br = repo.active_branch.name
-    if ac_br .= 'master':
+    if ac_br != 'master':
         await ups.edit(
             f'**[UPDATER]:**` Looks like you are using your own custom branch ({ac_br}). '
             'in that case, Updater is unable to identify '
@@ -126,7 +126,7 @@ async def upstream(ups):
         repo.__del__()
         return
 
-    if conf .= "now" and not force_update:
+    if conf != "now" and not force_update:
         changelog_str = f'**New UPDATE available for {ALIVE_NAME}\n\nCHANGELOG:**\n`{changelog}`'
         if len(changelog_str) > 4096:
             await ups.edit("`Changelog is too big, view the file to see it.`")
