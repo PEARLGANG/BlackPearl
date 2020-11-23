@@ -11,7 +11,7 @@ from telethon.tl.functions.account import UpdateProfileRequest
 
 from pearl import (BIO_PREFIX, BOTLOG, BOTLOG_CHATID, CMD_HELP, DEFAULT_BIO,
                      SPOTIFY_PASS, SPOTIFY_USERNAME, bot)
-from pearl.utils import register, grp_exclude
+from pearl.events import register
 
 # =================== CONSTANT ===================
 SPO_BIO_ENABLED = "`Spotify current music to bio is now enabled.`"
@@ -110,7 +110,6 @@ async def dirtyfix():
 
 
 @register(outgoing=True, pattern="^.enablespotify$")
-@grp_exclude()
 async def set_biostgraph(setstbio):
     setrecursionlimit(700000)
     if not SPOTIFYCHECK:
@@ -123,7 +122,6 @@ async def set_biostgraph(setstbio):
 
 
 @register(outgoing=True, pattern="^.disablespotify$")
-@grp_exclude()
 async def set_biodgraph(setdbio):
     global SPOTIFYCHECK
     global RUNNING
@@ -133,9 +131,6 @@ async def set_biodgraph(setdbio):
     await setdbio.edit(SPO_BIO_DISABLED)
 
 
-CMD_HELP.update({
-    "spotify": [
-        'Spotify', " - `.enablespotify`: Enable Spotify bio updating.\n"
-        " - `.disablespotify`: Disable Spotify bio updating.\n"
-    ]
-})
+CMD_HELP.update({"enablespotify": "Usage: Enable Spotify bio updating."})
+
+CMD_HELP.update({"disablespotify": "Usage: Disable Spotify bio updating."})
