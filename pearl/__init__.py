@@ -128,6 +128,8 @@ if bool(ENV):
     ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
 
     LESS_SPAMMY = os.environ.get("LESS_SPAMMY", True)
+     
+    CMD_HNDLR = os.environ.get("CMD_HNDLR", r"\.")
 
     # Time & Date - Country and Time Zone
     COUNTRY = str(os.environ.get("COUNTRY", ""))
