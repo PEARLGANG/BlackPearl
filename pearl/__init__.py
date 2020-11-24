@@ -162,7 +162,10 @@ if bool(ENV):
         )
     else:
         lastfm = None
-
+        
+    # JustWatch Country
+    WATCH_COUNTRY = os.environ.get("WATCH_COUNTRY") or None
+    
     # Google Drive Module
     G_DRIVE_CLIENT_ID = os.environ.get("G_DRIVE_CLIENT_ID", None)
     G_DRIVE_CLIENT_SECRET = os.environ.get("G_DRIVE_CLIENT_SECRET", None)
