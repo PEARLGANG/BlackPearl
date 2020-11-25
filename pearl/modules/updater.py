@@ -19,7 +19,7 @@ requirements_path = path.join(
 HEROKU_API_KEY = Var.HEROKU_API_KEY
 HEROKU_APP_NAME = Var.HEROKU_APP_NAME
 GIT_REPO_NAME = "BLackPearl"
-UPSTREAM_REPO_URL = "https://github.com/PEARLGANG/BlackPearl/tree/main"
+UPSTREAM_REPO_URL = "https://github.com/PEARLGANG/BlackPearl"
 
 rider = CMD_HNDLR if CMD_HNDLR else "."
 
