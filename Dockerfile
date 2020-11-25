@@ -1,7 +1,7 @@
   
 FROM PEARLGANG/BlackPearl:latest
 
-RUN git clone https://github.com/PEARLGANG/BlackPearl.git /root/pearl
+RUN git clone https://github.com/PEARLGANG/BlackPearl /root/pearl
 
 WORKDIR /root/pearl
 
