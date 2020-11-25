@@ -12,6 +12,7 @@
   "repository": "https://github.com/PEARLGANG/BlackPearl",
   "website": "clownmafia.ml",
   "success_url": "t.me/pearlsupport",
+  "stack": "container",
   "env": {
     "ENV": {
       "description": "Setting this to ANYTHING will enable heroku.",
