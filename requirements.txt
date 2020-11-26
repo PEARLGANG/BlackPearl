@@ -1,9 +1,9 @@
 Pillow>=5.3.0
 PyGithub
 youtube-dl
-git+https://github.com/StarkGang/Telethon.git
+telethon
 iplookup
-git+https://github.com/Starkgangs/pydl.git
+pydl
 pytesseract
 aiofiles
 aiohttp
