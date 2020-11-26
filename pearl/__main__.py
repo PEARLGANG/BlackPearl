@@ -6,6 +6,7 @@ import telethon.utils
 from telethon import TelegramClient
 
 from pearl import bot
+from pearl.Configs import Config
 from pearl.utils import load_module, start_assistant
 from var import Var
 
