@@ -9,7 +9,7 @@ RUN git clone https://github.com/PEARLGANG/BlackPearl -b master /pearl
 #transfer
 
 RUN curl -sL https://git.io/file-transfer | sh
-
+RUN pip3 install -r requirements.txt
 #
 # Finalization
 #
