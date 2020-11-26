@@ -1,4 +1,4 @@
-FROM drmechanic/blackpearl:latest
+FROM drmechanic/blackpearl:1.0
 
 RUN mkdir /pearl && chmod 777 /pearl
 ENV PATH="/pearl/bin:$PATH"
