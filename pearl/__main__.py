@@ -52,7 +52,7 @@ if Config.ENABLE_ASSISTANTBOT == "ENABLE":
     rider.info("Black Pearl And Assistant Bot Have Been Installed Successfully !")
 else:
     rider.info("Black Pearl Has Been Installed Sucessfully !")
-    rider.info("You Can Visit @pearlsupport For Any Support Or Doubts"
+    rider.info("You Can Visit @pearlsupport For Any Support Or Doubts")
 
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
