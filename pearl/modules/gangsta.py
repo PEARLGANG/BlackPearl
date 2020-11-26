@@ -1,6 +1,9 @@
 import asyncio
 
 from pearl.utils import pearl_on_cmd
+from pearl import ALIVE_NAME
+
+rider = ALIVE_NAME
 
 
 @pearl.on(pearl_on_cmd("gangsta ?(.*)"))
@@ -20,4 +23,4 @@ async def _(event):
         await asyncio.sleep(0.3)
         await event.edit("🔥🔥🔥")
         await asyncio.sleep(0.3)
-        await event.edit("EVERyBOdy iZ GangSTur UNtIL RiDeR ArRivE 🔥🔥🔥")
+        await event.edit("EVERyBOdy iZ GangSTur UNtIL {rider} ArRivE 🔥🔥🔥")
