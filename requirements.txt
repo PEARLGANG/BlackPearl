@@ -5,6 +5,7 @@ telethon
 iplookup
 pydl
 pytesseract
+pytube
 aiofiles
 aiohttp
 aria2p
