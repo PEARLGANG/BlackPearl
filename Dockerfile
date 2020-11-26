@@ -1,4 +1,4 @@
-FROM PEARLGANG/BlackPearl:latest
+FROM pearlgang/BlackPearl:latest
 
 RUN mkdir /pearl && chmod 777 /pearl
 ENV PATH="/pearl/bin:$PATH"
