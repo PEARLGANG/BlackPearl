@@ -13,6 +13,7 @@ from pearl.Configs import Config
 from var import Var
 
 cmdhandler = Config.COMMAND_HAND_LER
+rider = logging.getLogger("PLUGINS")
 
 def command(**args):
     args["func"] = lambda e: e.via_bot_id is None
@@ -89,7 +90,8 @@ def load_module(shortname):
         import importlib
         import sys
         from pathlib import Path
-
+        
+        import pearl.modules
         import pearl.utils
 
         path = Path(f"pearl/modules/{shortname}.py")
@@ -97,12 +99,13 @@ def load_module(shortname):
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
-        print("Successfully (re)imported " + shortname)
+        rider.info("Successfully (re)imported " + shortname)
     else:
         import importlib
         import sys
         from pathlib import Path
-
+        
+        import pearl.modules
         import pearl.utils
 
         path = Path(f"pearl/modules/{shortname}.py")
@@ -125,7 +128,7 @@ def load_module(shortname):
         spec.loader.exec_module(mod)
         # for imports
         sys.modules["pearl.modules." + shortname] = mod
-        print("Successfully imported " + shortname)
+        rider.info("Successfully imported " + shortname)
 
 
 def remove_plugin(shortname):
@@ -475,7 +478,8 @@ def start_assistant(shortname):
         import importlib
         import sys
         from pathlib import Path
-
+        
+        import pearl.modules
         import pearl.utils
 
         path = Path(f"pearl/modules/assistant/{shortname}.py")
@@ -483,13 +487,14 @@ def start_assistant(shortname):
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
-        print("Starting Your Assistant Bot.")
-        print("Assistant Sucessfully imported " + shortname)
+        rider.info("Starting Your Assistant Bot.")
+        rider.info("Assistant Sucessfully imported " + shortname)
     else:
         import importlib
         import sys
         from pathlib import Path
-
+        
+        import pearl.modules
         import pearl.utils
 
         path = Path(f"pearl/modules/assistant/{shortname}.py")
@@ -499,7 +504,7 @@ def start_assistant(shortname):
         mod.tgbot = bot.tgbot
         spec.loader.exec_module(mod)
         sys.modules["pearl.modules.assistant" + shortname] = mod
-        print("Assistant Has imported " + shortname)
+        rider.info("Assistant Has imported " + shortname)
         
 async def check_media(reply_message):
     if reply_message and reply_message.media:
