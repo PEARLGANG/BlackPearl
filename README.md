@@ -22,7 +22,7 @@ Best User Bot To Manage Your Telegram Account
 
 ## Telegram-String
 
-[![Run on Repl.it](https://repl.it/badge/github/PEARLGANG/BlackPearl)](https://BlackPearl.drmechanic.repl.run)
+[![Run on Repl.it](https://repl.it/badge/github/PEARLGANG/BlackPearl)](https://repl.it/@DRMECHANIC/BlackPearl)
 
 
 ### The Normal Way
