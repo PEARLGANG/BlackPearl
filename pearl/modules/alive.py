@@ -52,7 +52,7 @@ pm_caption += "➢ **License** : [GNU General Public License v3.0](github.com/PE
 pm_caption += "➢ **Copyright** : By [Github](GitHub.com/PEARLGANG)\n"
 pm_caption += "➢ **Check Stats By Doing** `.stat`. \n"
 pm_caption += "✪༺ ──•◈•───•◈•──༻✪\n\n"
-pm_caption += "➢ **[Deploy Black Pearl](https://heroku.com/deploy?template=https://github.com/PEARLGANG/BlackPearl/tree/main)** \n"
+pm_caption += "➢ **[Deploy Black Pearl](https://heroku.com/deploy?template=https://github.com/PEARLGANG/BlackPearl)** \n"
 
 
 @pearl.on(pearl_on_cmd(pattern=r"alive"))
