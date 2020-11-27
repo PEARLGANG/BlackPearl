@@ -130,6 +130,12 @@ if bool(ENV):
     COUNTRY = str(os.environ.get("COUNTRY", ""))
 
     TZ_NUMBER = int(os.environ.get("TZ_NUMBER", 1))
+    
+    # User Terminal alias
+    USER_TERM_ALIAS = os.environ.get("USER_TERM_ALIAS") or "master"
+
+    # Updater alias
+    UPDATER_ALIAS = os.environ.get("UPDATER_ALIAS") or "BlackPearl"
 
     # Clean Welcome
     CLEAN_WELCOME = sb(os.environ.get("CLEAN_WELCOME", "True"))
