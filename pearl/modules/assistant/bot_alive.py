@@ -46,8 +46,8 @@ pm_caption += "➥ **Current Branch** : `master`\n"
 pm_caption += f"➥ **Version** : `1.0`\n"
 pm_caption += f"➥ **My Boss** : {DEFAULTUSER} \n"
 pm_caption += "➥ **Heroku Database** : `AWS - Working Properly`\n\n"
-pm_caption += "➥ **License** : [GNU General Public License v3.0](github.com/drmechanic7776/Black_Pearl/blob/master/LICENSE)\n"
-pm_caption += "➥ **Copyright** : By [Github](GitHub.com/drmechanic)\n"
+pm_caption += "➥ **License** : [GNU General Public License v3.0](github.com/PEARLGANG/BlackPearl/blob/master/LICENSE)\n"
+pm_caption += "➥ **Copyright** : By [Github](GitHub.com/PEARLGANG)\n"
 pm_caption += "**Assistant By BLACK PEARL**" 
 
 # only Owner Can Use it 
