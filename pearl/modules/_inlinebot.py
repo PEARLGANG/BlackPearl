@@ -79,16 +79,6 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             reply_popp_up_alert = "Please get your own Userbot, and don't use mine!"
             await event.answer(reply_popp_up_alert, cache_time=0, alert=True)
 
-    @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"close")))
-        async def on_plug_in_callback_query_handler(event):
-            if event.query.user_id == bot.uid:
-                await event.edit(
-                    "Menu Closed!!", buttons=[Button.inline("Re-open Menu", data="reopen")]
-                )
-            else:
-                reply_pop_up_alert = "Please get your own userbot from @pearlsupport "
-                await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
-
     @tgbot.on(
         events.callbackquery.CallbackQuery(  # pylint:disable=E0602
             data=re.compile(b"helpme_prev\((.+?)\)")))
