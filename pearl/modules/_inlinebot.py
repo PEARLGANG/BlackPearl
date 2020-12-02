@@ -190,7 +190,7 @@ async def on_plug_in_callback_query_handler(event):
             return
         buttons = paginate_help(0, CMD_HELP, "helpme")
         k = f"""Black Pearl Userbot Modules Are Listed Here !\n
-    For More Help or Support Visit @FridayOT \nCurrently Loaded Plugins: {len(CMD_LIST)}"""
+For More Help or Support Visit @pearlsupport \nCurrently Loaded Plugins: {len(CMD_LIST)}"""
         await event.edit(message=k, buttons=buttons)
 
 
