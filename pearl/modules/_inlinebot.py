@@ -8,7 +8,7 @@ from telethon import functions
 from telethon.tl.functions.users import GetFullUserRequest
 import os
 from pearl import ALIVE_NAME
-from pearl import CMD_LIST
+from pearl import CMD_LIST, CMD_HELP
 from pearl.modules import inlinestats
 PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
 if PMPERMIT_PIC is None:
