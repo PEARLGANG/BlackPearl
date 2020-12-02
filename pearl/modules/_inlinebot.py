@@ -185,13 +185,13 @@ async def on_plug_in_callback_query_handler(event):
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"backme")))
     async def sed(event):
         if not event.query.user_id == bot.uid:
-            sedok = "Who The Fuck Are You? Get Your Own Friday."
-            await event.answer(sedok, cache_time=0, alert=True)
+            rider = "Who The Fuck Are You? Get Your Own BlackPearl."
+            await event.answer(rider, cache_time=0, alert=True)
             return
         buttons = paginate_help(0, CMD_HELP, "helpme")
-        sed = f"""Friday Userbot Modules Are Listed Here !\n
+        k = f"""Black Pearl Userbot Modules Are Listed Here !\n
     For More Help or Support Visit @FridayOT \nCurrently Loaded Plugins: {len(CMD_LIST)}"""
-        await event.edit(message=sed, buttons=buttons)
+        await event.edit(message=k, buttons=buttons)
 
 
 def paginate_help(page_number, loaded_modules, prefix):
