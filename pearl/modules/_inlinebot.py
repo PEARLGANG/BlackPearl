@@ -110,8 +110,8 @@ async def on_plug_in_callback_query_handler(event):
         return
     plugin_name = event.data_match.group(1).decode("UTF-8")
     if plugin_name in CMD_HELP:
-        help_cmd = f"**💡 PLUGIN NAME 💡 :** `{plugin_name}` \n{CMD_HELP[plugin_name]}"
-    reply_pop_up_alert = help_cmd
+        help_string = f"**💡 PLUGIN NAME 💡 :** `{plugin_name}` \n{CMD_HELP[plugin_name]}"
+    reply_pop_up_alert = help_string
     reply_pop_up_alert += "\n\n**(C) @pearlsupport** ".format(plugin_name)
     if len(reply_pop_up_alert) >= 4096:
         crackexy = "`Pasting Your Help Menu.`"
