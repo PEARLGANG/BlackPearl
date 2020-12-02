@@ -182,6 +182,18 @@ async def on_plug_in_callback_query_handler(event):
         text4 = "Ok, Wait. You can Ask After Master Approves You. Kindly, Wait."
         await borg.send_message(event.query.user_id, text4)
 
+    @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"backme")))
+    async def sed(event):
+        if not event.query.user_id == bot.uid:
+            sedok = "Who The Fuck Are You? Get Your Own Friday."
+            await event.answer(sedok, cache_time=0, alert=True)
+            return
+        buttons = paginate_help(0, CMD_HELP, "helpme")
+        sed = f"""Friday Userbot Modules Are Listed Here !\n
+    For More Help or Support Visit @FridayOT \nCurrently Loaded Plugins: {len(CMD_LIST)}"""
+        await event.edit(message=sed, buttons=buttons)
+
+
 def paginate_help(page_number, loaded_modules, prefix):
     number_of_rows = 10
     number_of_cols = 2
