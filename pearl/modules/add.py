@@ -10,11 +10,10 @@ Syntax: .invite <User(s)>"""
 
 from telethon import functions
 
-from pearl.utils import pearl_on_cmd, edit_or_reply, sudo_cmd
+from pearl.utils import pearl_on_cmd, edit_or_reply
 
 
 @pearl.on(pearl_on_cmd(pattern="invite ?(.*)"))
-@pearl.on(sudo_cmd(pattern="invite ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
@@ -49,3 +48,11 @@ async def _(event):
                 except Exception as e:
                     await event.reply(str(e))
             await edit_or_reply(event, "Invited Successfully")
+            
+CMD_HELP.update(
+    {
+        "add": "**Add**\
+\n\n**Syntax : **`.invite <user_id or user-name>`\
+\n**Usage :** Adds User To Group"
+    }
+)
