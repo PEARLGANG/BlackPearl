@@ -5,6 +5,7 @@ from pearl import ALIVE_NAME
 from pearl.Configs import Config
 from datetime import datetime
 from pearl import Lastupdate
+from pearl import CMD_HELP
 
 #Functions
 def get_readable_time(seconds: int) -> str:
