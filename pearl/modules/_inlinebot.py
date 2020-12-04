@@ -1,5 +1,7 @@
 import re
 from math import ceil
+import asyncio
+import html
 
 from telethon import Button
 from telethon import custom
@@ -149,8 +151,10 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                     ok = await bot.send_message("me", help_string)
                     await asyncio.sleep(60)
                     await ok.delete()
+            else:
+                await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
         else:
-            reply_pop_up_alert = "Get Off Me!!!, Get Your Own BOT!"
+            reply_pop_up_alert = "You Cannot Become Barbosa Here!"
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
             
     @tgbot.on(
