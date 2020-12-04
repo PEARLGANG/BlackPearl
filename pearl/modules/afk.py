@@ -6,6 +6,7 @@ from datetime import datetime
 from pearl.utils import pearl_on_cmd
 from telethon import events
 from telethon.tl import functions, types
+from pearl import CMD_HELP
 
 global USER_AFK  # pylint:disable=E0602
 global afk_time  # pylint:disable=E0602
