@@ -11,6 +11,7 @@ Syntax: .invite <User(s)>"""
 from telethon import functions
 
 from pearl.utils import pearl_on_cmd, edit_or_reply
+from pearl import CMD_HELP
 
 
 @pearl.on(pearl_on_cmd(pattern="invite ?(.*)"))
