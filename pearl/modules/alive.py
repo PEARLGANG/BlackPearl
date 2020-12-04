@@ -67,6 +67,6 @@ CMD_HELP.update(
     {
         "alive": "**ALive**\
 \n\n**Syntax : **`.alive`\
-\n**Usage :** Check if UserBot is Alive"
+\n**Usage :** Check if Black Pearl is Alive"
     }
 )    
