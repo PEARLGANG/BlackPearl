@@ -83,7 +83,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def on_plug_in_callback_query_handler(event):
         if event.query.user_id == bot.uid:
             await event.edit(
-                "Menu Closed!!", buttons=[Button.inline("Re-open Menu", data="reopen")]
+                "Menu Closed!!",
             )
         else:
             reply_pop_up_alert = "Please get your own userbot from @pearlsupport "
@@ -177,16 +177,6 @@ async def on_plug_in_callback_query_handler(event):
                                 f"tg://user?id={him_id}")
                                 ]
                                 )
-                                
-    @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"reopen")))
-    async def megic(event):
-        if event.query.user_id == bot.uid:
-            buttons = paginate_help(0, CMD_LIST, "helpme")
-            await event.edit("Menu Re-opened", buttons=buttons)
-        else:
-            reply_pop_up_alert = "This bot ain't for u!!"
-            await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
-
 
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"askme")))
     async def rip(event):
