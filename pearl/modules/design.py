@@ -2,6 +2,7 @@
 from telethon.tl.types import ChannelParticipantsAdmins
 
 from pearl.utils import pearl_on_cmd
+from pearl import CMD_HELP
 
 
 @pearl.on(pearl_on_cmd("join"))
@@ -36,3 +37,5 @@ async def _(event):
     else:
         await event.reply(mentions)
     await event.delete()
+
+CMD_HELP.update({"design": "Random codes.\nCmds - .join\n.pay"})    
