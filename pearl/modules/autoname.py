@@ -6,7 +6,7 @@ import time
 from telethon.errors import FloodWaitError
 from telethon.tl import functions
 from uniborg.util import pearl_on_cmd, edit_or_reply, sudo_cmd
-
+from pearl import CMD_HELP
 from pearl import ALIVE_NAME
 
 DEL_TIME_OUT = 60
