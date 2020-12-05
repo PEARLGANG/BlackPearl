@@ -4,6 +4,7 @@ from random import randint, uniform
 from PIL import Image, ImageEnhance, ImageOps
 from telethon.tl.types import DocumentAttributeFilename
 from pearl.util import pearl_on_cmd
+from pearl import CMD_HELP
 
 
 @pearl.on(pearl_on_cmd(pattern="df(?: |$)(.*)", outgoing=True))
@@ -112,3 +113,5 @@ async def check_media(reply_message):
         return False
     else:
         return data
+
+CMD_HELP.update({"deepfryer": ".df <reply to pic>\nUsage - Deepfry the picture."})
