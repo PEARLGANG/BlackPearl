@@ -15,6 +15,7 @@ import asyncio
 import random
 
 from pearl.utils import pearl_on_cmd
+from pearl import CMD_HELP
 
 
 @pearl.on(pearl_on_cmd(pattern=r"qt"))
@@ -327,3 +328,5 @@ async def _(event):
         await event.edit(
             '`"What’s something you misunderstood as a child and only realized much later was wrong?"`'
         )
+
+CMD_HELP.update({"conversationqt": ".qt\nUsage - Helps starting a conversation."})        
