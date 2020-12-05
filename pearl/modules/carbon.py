@@ -10,6 +10,7 @@ from selenium.webdriver.common.keys import Keys
 
 from pearl import CHROME_DRIVER, GOOGLE_CHROME_BIN
 from pearl.utils import register
+from pearl import CMD_HELP
 
 CARBONLANG = "auto"
 LANG = "en"
@@ -98,3 +99,5 @@ async def carbon_api(e):
         driver.quit()
         # Removing carbon.png after uploading
         await e.delete()  # Deleting msg
+        
+CMD_HELP.update({"carbon": ".carbon <text/reply to text>\nUsage - Generate a carbon for the text."})
