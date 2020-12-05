@@ -44,4 +44,4 @@ async def _(message):
             except MessageIdInvalidError:
                 return
             
-CMD_HELP.update({"dumpster": ".dump\nUsage - useless."})
+CMD_HELP.update({"dumpster": ".waste\nUsage - useless."})
