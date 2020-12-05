@@ -1,10 +1,10 @@
 from telethon.tl.functions.photos import DeletePhotosRequest, GetUserPhotosRequest
 from telethon.tl.types import InputPhoto
-from uniborg.util import pearl_on_cmd, edit_or_reply, sudo_cmd
+from pearl.util import pearl_on_cmd, edit_or_reply
+from pearl import CMD_HElp
 
 
 @pearl.on(pearl_on_cmd(pattern="delpfp ?(.*)"))
-@pearl.on(sudo_cmd(pattern="delpfp ?(.*)", allow_sudo=True))
 async def remove_profilepic(delpfp):
     """ For .delpfp command, delete your current profile picture in Telegram. """
     group = delpfp.text[8:]
@@ -31,3 +31,9 @@ async def remove_profilepic(delpfp):
     await edit_or_reply(
         delpfp, f"`Successfully deleted {len(input_photos)} profile picture(s).`"
     )
+
+CMD_HELP.update(
+    {
+        "delfp": ".delpfp <profile pictures count>\nUsage : This plugin deletes requested number of profile pictures."
+    }
+)
