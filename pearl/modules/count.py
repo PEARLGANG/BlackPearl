@@ -8,6 +8,7 @@ from telethon.tl.custom import Dialog
 from telethon.tl.types import Channel, Chat, User
 
 from pearl.utils import pearl_on_cmd
+from pearl import CMD_HELP
 
 logging.basicConfig(
     format="[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s", level=logging.WARNING
@@ -147,3 +148,9 @@ def user_full_name(user):
     names = [i for i in list(names) if i]
     full_name = " ".join(names)
     return full_name
+
+CMD_HELP.update(
+    {
+        "count": ".count\nUsage : This plugin shows detailed stats about your account."
+    }
+)
