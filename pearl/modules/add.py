@@ -52,8 +52,8 @@ async def _(event):
             
 CMD_HELP.update(
     {
-        "add": "**Add**\
-\n\n**Syntax : **`.invite <user_id or user-name>`\
-\n**Usage :** Adds User To Group"
+        "add": "\
+\n\nSyntax :.invite <user_id or user-name>\
+\nUsage : Adds User To Group"
     }
 )
