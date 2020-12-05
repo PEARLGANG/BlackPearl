@@ -64,10 +64,4 @@ async def pearl(alive):
     await borg.send_file(alive.chat_id, PM_IMG, caption=pm_caption)
     await alive.delete()
 
-CMD_HELP.update(
-    {
-        "alive": "**ALive**\
-\n\n**Syntax : **`.alive`\
-\n**Usage :** Check if Black Pearl is Alive"
-    }
-)    
+CMD_HELP.update({"alive": "`.alive`\nUsage - Check if Black Pearl is working."})
