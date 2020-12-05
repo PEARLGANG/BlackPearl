@@ -8,7 +8,7 @@ import html
 from telethon.tl import functions
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import MessageEntityMentionName
-
+from pearl import CMD_HELP
 from pearl.utils import pearl_on_cmd
 
 
@@ -120,3 +120,11 @@ async def get_full_user(event):
                 return replied_user, None
             except Exception as e:
                 return None, e
+            
+CMD_HELP.update(
+    {
+        "clone": ".clone <reply to user who you want to clone>.\
+    \nUsage - clone the replied user account.\
+    "
+    }
+)
