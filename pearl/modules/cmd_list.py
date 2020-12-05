@@ -1,6 +1,7 @@
 import asyncio
 
 from pearl.utils import pearl_on_cmd
+from pearl import CMD_HELP
 
 
 # @command(pattern="^.cmds", outgoing=True)
@@ -18,3 +19,7 @@ async def install(event):
     o = "\n".join(_o)
     OUTPUT = f"**List of Plugins:**\n - {o}\n\n**HELP:** __All commands are can be viewed by, doing:-__ \n `.help <plugin name>` **without the < > brackets.**\n__All modules might not work directly__"
     await event.edit(OUTPUT)
+
+CMD_HELP.update(
+    {"cmd_list": ".cmds\nUsage - Get the list of all plugins in Black Pearl."}
+)    
