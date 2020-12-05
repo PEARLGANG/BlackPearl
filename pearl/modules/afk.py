@@ -166,7 +166,6 @@ async def on_afk(event):
 
 CMD_HELP.update(
     {
-        "afk": ".afk <Reason> \
-\nUsage: Gets You Afk"
+        "afk": " `.afk` <optional reason>\nUse - Sets your status to Offline."
     }
-)        
+)
