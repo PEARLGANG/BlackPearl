@@ -2,7 +2,7 @@
 import random
 
 from uniborg.util import pearl_on_cmd
-
+from pearl import CMD_HELP
 
 @pearl.on(pearl_on_cmd(pattern="coin ?(.*)"))
 async def _(event):
@@ -32,3 +32,9 @@ async def _(event):
             await event.edit("The coin landed on: **Tails**.")
     else:
         await event.edit("¯\_(ツ)_/¯")
+
+CMD_HELP.update(
+    {
+        "coinflip": ".coin\nUsage : This plugin flips the coin to land on heads or tails."
+    }
+)        
