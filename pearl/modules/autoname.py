@@ -59,3 +59,5 @@ async def _(event):
         await asyncio.sleep(DEL_TIME_OUT)
 
     await sed.edit(f"Auto Name has been started Black Pearl")
+
+CMD_HELP.update({"autoname": ".autoname\nUsage - Auto changing profile name, with time."})    
