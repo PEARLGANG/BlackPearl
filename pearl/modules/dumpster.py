@@ -3,6 +3,7 @@ import asyncio
 from telethon.errors.rpcerrorlist import MessageIdInvalidError
 
 from pearl.utils import pearl_on_cmd
+from pearl import CMD_HELP
 
 
 @pearl.on(pearl_on_cmd(pattern="waste ?(.*)"))
@@ -42,3 +43,5 @@ async def _(message):
                 await message.edit(something_else)
             except MessageIdInvalidError:
                 return
+            
+CMD_HELP.update({"dumpster": ".dump\nUsage - useless."})
