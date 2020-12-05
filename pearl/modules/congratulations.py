@@ -1,6 +1,7 @@
 import random
 
-from uniborg.util import pearl_on_cmd, edit_or_reply, sudo_cmd
+from pearl.util import pearl_on_cmd, edit_or_reply
+from pearl import CMD_HELP
 
 RUNSREACTS = [
     "`Congratulations and BRAVO!`",
@@ -17,10 +18,11 @@ RUNSREACTS = [
 
 
 @pearl.on(pearl_on_cmd(pattern="congo"))
-@pearl.on(sudo_cmd(pattern="congo", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
     bro = random.randint(0, len(RUNSREACTS) - 1)
     reply_text = RUNSREACTS[bro]
     await edit_or_reply(event, reply_text)
+
+CMD_HELP.update({"congratulations": ".congo\nUsage - Congratulate a person."})    
