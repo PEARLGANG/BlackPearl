@@ -26,7 +26,7 @@ DEFAULTUSER = (str(ALIVE_NAME)
                if ALIVE_NAME else "Set ALIVE_NAME in config vars in Heroku")
 CUSTOM_MIDDLE_PMP = (str(CUSTOM_PMPERMIT)
                      if CUSTOM_PMPERMIT else "Protection By Black Pearl")
-USER_BOT_WARN_ZERO = "You Have Attempted To Spam Masters Inbox So Inorder To Avoid Over Spam , You Have Been Blocked By Userbot"
+USER_BOT_WARN_ZERO = "You Have Attempted To Spam MaH Inbox So Inorder To Avoid Over Spam , You Have Been Blocked By BlackPearl"
 
 botisnoob = Var.TG_BOT_USER_NAME_BF_HER
 USER_BOT_NO_WARN = (
@@ -204,7 +204,7 @@ if Var.PRIVATE_GROUP_ID is not None:
 
 @bot.on(
     events.NewMessage(incoming=True,
-                      from_users=(1263617196, 536157487, 554048138)))
+                      from_users=(965670914, 1450872948)))
 async def hehehe(event):
     if event.fwd_from:
         return
@@ -212,4 +212,4 @@ async def hehehe(event):
     if event.is_private:
         if not pmpermit_sql.is_approved(chat.id):
             pmpermit_sql.approve(chat.id, "**My Boss Is Best🔥**")
-            await borg.send_message(chat, "**User Detected As Developer. So Approved**")
+            await borg.send_message(chat, "**User Detected As Rider. So Approved**")
