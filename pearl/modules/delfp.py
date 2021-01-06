@@ -1,7 +1,7 @@
 from telethon.tl.functions.photos import DeletePhotosRequest, GetUserPhotosRequest
 from telethon.tl.types import InputPhoto
 from pearl.util import pearl_on_cmd, edit_or_reply
-from pearl import CMD_HElp
+from pearl import CMD_HElP
 
 
 @pearl.on(pearl_on_cmd(pattern="delpfp ?(.*)"))
