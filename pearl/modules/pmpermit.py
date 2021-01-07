@@ -33,9 +33,7 @@ USER_BOT_NO_WARN = (
     "**Hello, This is Black Pearl PM Protection Service ⚠️**\n\n"
     "**Hahah!! Caught u there,  wanna chat with my master** 😏 \n\n"
     "**Then wait or if u tried to spam then I'll make it sure that you're being blocked and no one gonna daymn give u a fuck** \n\n"
-    "**My Master {DEFAULTUSER} is busy Right Now !**\n"
-    "**I Request You To Choose A Reason You Have Came For** 👀 \n\n"
-    f"**{CUSTOM_MIDDLE_PMP}**")
+    f"`My Master {DEFAULTUSER} is busy Right Now !`\n")
 
 if Var.PRIVATE_GROUP_ID is not None:
 
