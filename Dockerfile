@@ -1,4 +1,4 @@
-FROM drmechanic/blackpearl:1.0
+FROM python:3.9
 
 RUN pip3 install --upgrade pip setuptools 
 RUN pip3 install --upgrade pip
