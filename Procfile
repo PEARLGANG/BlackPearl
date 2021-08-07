@@ -1,1 +1,1 @@
-pearl: python -m pearl
+worker: python -m pearl
