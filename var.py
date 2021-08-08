@@ -1,4 +1,4 @@
-class Development(Var):
+class Var:
   APP_ID = 5204354
   API_HASH = "f99ae24d5cfb143e7d548f0bcc1315a6"
   ALIVE_NAME = "RnD"
