@@ -12,7 +12,7 @@ from pearl import CMD_LIST, LOAD_PLUG, SUDO_LIST, bot
 from pearl.Configs import Config
 from var import Var
 
-cmdhandler = Config.COMMAND_HAND_LER
+cmdhandler = Config.COMMAND_HANDLER
 rider = logging.getLogger("PLUGINS")
 
 def command(**args):
