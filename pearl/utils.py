@@ -208,8 +208,8 @@ def pearl_on_cmd(pattern=None, **args):
             # special fix for snip.py
             args["pattern"] = re.compile(pattern)
         else:
-            args["pattern"] = re.compile(cmdhandler + pattern)
-            cmd = cmdhandler + pattern
+            args["pattern"] = re.compile("\." + pattern)
+            cmd = "." + pattern
             try:
                 CMD_LIST[file_test].append(cmd)
             except:
