@@ -9,7 +9,6 @@ findnemo = topfunc.stark_finder
 issudousing = Config.SUDO_USERS
 islogokay = Config.PRIVATE_GROUP_ID
 isdbfine = Var.DB_URI
-isherokuokay = Var.HEROKU_APP_NAME
 gdriveisshit = Config.AUTH_TOKEN_DATA
 wttrapi = Config.OPEN_WEATHER_MAP_APPID
 rmbg = Config.REM_BG_API_KEY
@@ -24,11 +23,6 @@ if islogokay:
     logchat = "Connected ✅"
 else:
     logchat = "Dis-Connected ❌"
-
-if isherokuokay:
-    riplife = "Connected ✅"
-else:
-    riplife = "Not Connected ❌"
 
 if gdriveisshit:
     wearenoob = "Active ✅"
