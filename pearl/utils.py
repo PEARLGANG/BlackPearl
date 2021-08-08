@@ -12,7 +12,6 @@ from pearl import CMD_LIST, LOAD_PLUG, SUDO_LIST, bot
 from pearl.Configs import Config
 from var import Var
 
-cmdhandler = Config.COMMAND_HANDLER
 rider = logging.getLogger("PLUGINS")
 
 def command(**args):
@@ -163,8 +162,8 @@ def admin_cmd(pattern=None, **args):
             # special fix for snip.py
             args["pattern"] = re.compile(pattern)
         else:
-            args["pattern"] = re.compile(cmdhandler + pattern)
-            cmd = cmdhandler + pattern
+            args["pattern"] = re.compile("\." + pattern)
+            cmd = "." + pattern
             try:
                 CMD_LIST[file_test].append(cmd)
             except:
