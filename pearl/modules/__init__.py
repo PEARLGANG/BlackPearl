@@ -54,5 +54,4 @@ inlinestats = (f"✘ SHOWING BlackPearl STATS ✘\n"
                f"DATABASE = {dbstats} \n"
                f"SUDO = {amiusingsudo} \n"
                f"LOG-CHAT = {logchat} \n"
-               f"HEROKU = {riplife} \n"
                f"G-DRIVE = {wearenoob}")
