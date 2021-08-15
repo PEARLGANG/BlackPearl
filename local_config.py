@@ -11,5 +11,5 @@ class Development(Var):
   PRIVATE_GROUP_ID = 1001531459997
   TESSDATA_PREFIX = "./.apt/usr/share/tesseract-ocr/4.00/tessdata"
   TG_BOT_TOKEN_BF_HER = "1496391120:AAGk4fxU3KNumodTBFpsos7XFUIsX-YC_A8"
-  TG_BOT_USER_NAME_BF_HER = "@Drmechanic_bot"
+  TG_BOT_USER_NAME_BF_HER = "@Drmechanicbot"
   TZ = "Asia/Kolkata"
