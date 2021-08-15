@@ -258,11 +258,7 @@ else:
     PM_LOGGR_BOT_API_ID = os.environ.get("PM_LOGGR_BOT_API_ID", None)
     if PM_LOGGR_BOT_API_ID:
         PM_LOGGR_BOT_API_ID = int(PM_LOGGR_BOT_API_ID)
-        # For Databases
-        # can be None in which case modules requiring
-        # DataBase would not work
-    DB_URI = os.environ.get("DATABASE_URL", None)
-        # number of rows of buttons to be displayed in .helpme command
+        #K
     NO_OF_BUTTONS_DISPLAYED_IN_H_ME_CMD = int(
             os.environ.get("NO_OF_BUTTONS_DISPLAYED_IN_H_ME_CMD", 5)
         )
@@ -323,8 +319,7 @@ else:
     ASSISTANT_LOG = int(os.environ.get("ASSISTANT_LOG", False))
     UPSTREAM_REPO = os.environ.get("UPSTREAM_REPO", "https://github.com/PEARLGANG/BlackPearl")
     ALIVE_IMAGE = os.environ.get("ALIVE_IMAGE", "https://telegra.ph/file/d8d7dc283fb294008ddcb.jpg")
-    TESSDATA_PREFIX = os.environ.get("TESSDATA_PREFIX", "./.apt/usr/share/tesseract-ocr/4.00/tessdata")
-     DB_URI = None    
+    TESSDATA_PREFIX = os.environ.get("TESSDATA_PREFIX", "./.apt/usr/share/tesseract-ocr/4.00/tessdata")   
 # Global Variables
 COUNT_MSG = 0
 USERS = {}
