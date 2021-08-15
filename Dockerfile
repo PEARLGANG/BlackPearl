@@ -6,7 +6,7 @@ RUN if [ ! -e /usr/bin/pip ]; then ln -s pip3 /usr/bin/pip ; fi
 RUN if [ ! -e /usr/bin/python ]; then ln -sf /usr/bin/python3 /usr/bin/python; fi 
 RUN rm -r /root/.cache && exit 0
 ENV PYTHONUNBUFFERED=1
-RUN git clone --no-cache https://github.com/PEARLGANG/BlackPearl /root/pearl && exit 0
+RUN git clone https://github.com/PEARLGANG/BlackPearl /root/pearl && exit 0
 
 RUN mkdir /root/pearl/bin/
 WORKDIR /root/pearl/
