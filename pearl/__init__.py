@@ -4,7 +4,7 @@ import sys
 import time
 from distutils.util import strtobool as sb
 from logging import DEBUG, INFO, basicConfig, getLogger
-
+from telethon.tl.types import ChatBannedRights
 import pylast
 from dotenv import load_dotenv
 from pylast import LastFMNetwork, md5
