@@ -256,8 +256,8 @@ else:
     NC_LOG_P_M_S = bool(os.environ.get("NC_LOG_P_M_S", False))
         # send .get_id in any channel to forward all your NEW PMs to this group
     PM_LOGGR_BOT_API_ID = os.environ.get("PM_LOGGR_BOT_API_ID", None)
-        if PM_LOGGR_BOT_API_ID:
-            PM_LOGGR_BOT_API_ID = int(PM_LOGGR_BOT_API_ID)
+    if PM_LOGGR_BOT_API_ID:
+        PM_LOGGR_BOT_API_ID = int(PM_LOGGR_BOT_API_ID)
         # For Databases
         # can be None in which case modules requiring
         # DataBase would not work
@@ -303,11 +303,11 @@ else:
     G_DRIVE_CLIENT_SECRET = os.environ.get("G_DRIVE_CLIENT_SECRET", None)
     GDRIVE_FOLDER_ID = os.environ.get("GDRIVE_FOLDER_ID", None)
     AUTH_TOKEN_DATA = os.environ.get("AUTH_TOKEN_DATA", None)
-        if AUTH_TOKEN_DATA != None:
-            os.makedirs(TMP_DOWNLOAD_DIRECTORY)
-            t_file = open(TMP_DOWNLOAD_DIRECTORY + "auth_token.txt", "w")
-            t_file.write(AUTH_TOKEN_DATA)
-            t_file.close()
+    if AUTH_TOKEN_DATA != None:
+        os.makedirs(TMP_DOWNLOAD_DIRECTORY)
+        t_file = open(TMP_DOWNLOAD_DIRECTORY + "auth_token.txt", "w")
+        t_file.write(AUTH_TOKEN_DATA)
+        t_file.close()
     YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
     GDRIVE_FOLDER_ID = os.environ.get("GDRIVE_FOLDER_ID", None)
         # MongoDB
