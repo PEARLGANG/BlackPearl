@@ -104,7 +104,7 @@ async def spammer(rider):
     spam_message = str(rider.pattern_match.group(1).split(' ', 1)[1])
     await asyncio.wait([rider.respond(spam_message) for i in range(counter)])
   except:      
-        return await e.reply(f"**Error**\nusage `.spam <time in seconds> <text>`")
+        return await rider.reply(f"**Error**\nusage `.spam <time in seconds> <text>`")
 
 @pearl.on(pearl_on_cmd(pattern=f"(?:mspam|msp)\s(.*)"))
 async def tiny_pic_spam(rider):
