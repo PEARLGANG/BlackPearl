@@ -21,10 +21,7 @@ from youtube_dl.utils import (DownloadError, ContentTooShortError,
                               ExtractorError, GeoRestrictedError,
                               MaxDownloadsReached, PostProcessingError,
                               UnavailableVideoError, XAttrMetadataError)
-try:
- import instantmusic , subprocess
-except:
- os.system("pip install instantmusic")
+import instantmusic
  
 
 
