@@ -127,7 +127,7 @@ def load_module(shortname):
         spec.loader.exec_module(mod)
         # for imports
         sys.modules["pearl.modules." + shortname] = mod
-        print("Successfully imported " + shortname)
+        print("BlackPearl Has Imported " + shortname)
 
 
 def remove_plugin(shortname):
@@ -503,7 +503,8 @@ def start_assistant(shortname):
         mod.tgbot = bot.tgbot
         spec.loader.exec_module(mod)
         sys.modules["pearl.modules.assistant" + shortname] = mod
-        print("Assistant Has imported " + shortname)
+        print("**Starting Your Assistant Bot.**")
+        print("Assistant Has Imported " + shortname)
         
 async def check_media(reply_message):
     if reply_message and reply_message.media:
