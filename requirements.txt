@@ -36,6 +36,7 @@ heroku3
 html_telegraph_poster
 httplib2
 humanize
+instantmusic
 jikanpy
 justwatch
 lxml
@@ -57,6 +58,7 @@ pytz
 qrcode
 regex
 requests
+subprocess
 search-engine-parser>=0.4.2
 selenium
 speedtest-cli>=2.0.2
