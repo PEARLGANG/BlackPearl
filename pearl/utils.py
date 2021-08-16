@@ -12,7 +12,7 @@ from pearl import CMD_LIST, LOAD_PLUG, SUDO_LIST, bot
 from pearl.Configs import Config
 from var import Var
 
-rider = logging.getLogger("PLUGINS")
+
 
 def command(**args):
     args["func"] = lambda e: e.via_bot_id is None
@@ -98,7 +98,7 @@ def load_module(shortname):
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
-        rider.info("Successfully (re)imported " + shortname)
+        print("Successfully (re)imported " + shortname)
     else:
         import importlib
         import sys
@@ -127,7 +127,7 @@ def load_module(shortname):
         spec.loader.exec_module(mod)
         # for imports
         sys.modules["pearl.modules." + shortname] = mod
-        rider.info("Successfully imported " + shortname)
+        print("Successfully imported " + shortname)
 
 
 def remove_plugin(shortname):
@@ -486,8 +486,8 @@ def start_assistant(shortname):
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
-        rider.info("Starting Your Assistant Bot.")
-        rider.info("Assistant Sucessfully imported " + shortname)
+        print("Starting Your Assistant Bot.")
+        print("Assistant Sucessfully imported " + shortname)
     else:
         import importlib
         import sys
@@ -503,7 +503,7 @@ def start_assistant(shortname):
         mod.tgbot = bot.tgbot
         spec.loader.exec_module(mod)
         sys.modules["pearl.modules.assistant" + shortname] = mod
-        rider.info("Assistant Has imported " + shortname)
+        print("Assistant Has imported " + shortname)
         
 async def check_media(reply_message):
     if reply_message and reply_message.media:
